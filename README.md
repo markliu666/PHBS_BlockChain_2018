@@ -1,4 +1,4 @@
-# A Detailed Review of Ethereum in Comparison with Bitcoin
+# A Detailed Review of Ethereum
 
 ## 1. Overview of Ethereum:
 
