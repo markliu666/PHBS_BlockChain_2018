@@ -47,14 +47,10 @@ The difference between the finally used MPT (merkle patricia trie) and a common 
 
 In actual use, we use modified MPT, which has extension node, branch node and leaf node. A large MPT may contain a small MPT, for example, code is a small MPT. Each time only the changed account will have a new branch node written to the next block, and the rest will remain unchanged. This is done to preserve the history. I think there are at least two advantages to the benefits: (1) Add traceability. (2) In order to temporarily allow the fork. As Ethereum block generation rate is very fast, it has a lot of forks. The fork node needs to roll back. Moreover, some smart contracts are very complicated, and the original state cannot be restored without saving the history.
 
-Modified MPT is shown in the figure.
+Modified MPT is shown in this figure.
 ![Image text](https://github.com/markliu666/PHBS_BlockChain_2018/blob/master/Modified%20MPT.png)
 
-The structure of the block header is shown in the figure.
-![Image text](https://github.com/markliu666/PHBS_BlockChain_2018/blob/master/block_header.png)
-
-The structure of the block is shown in the figure.
-![Image text](https://github.com/markliu666/PHBS_BlockChain_2018/blob/master/block.png)
+The structure of the block header is shown below
 
 ```go
 type Header struct {
@@ -91,6 +87,7 @@ type Header struct {
  
 }
 ```
+The structure of the block is shown below.
 
 ```go
 type Block struct {
@@ -162,13 +159,13 @@ Ethereum mining is now based on GPU, which is relatively successful, so that uni
 
 Another difference between Ethereum's mining and Bitcoin’s mining is that Ethereum uses pre-mining to distribute to Ethereum designers, and pre-sale pre-mining Ethers for developing Ethereum. At present, the supply of Ethereum in Ethereum is about 100 million, with a market value of about 50 billion US dollars.
 
-The mining situation of Ethereum is shown in the figure.
+The mining situation of Ethereum is shown in these two figures.
 ![Image text](https://github.com/markliu666/PHBS_BlockChain_2018/blob/master/Ether_supply_growth.png)
 ![Image text](https://github.com/markliu666/PHBS_BlockChain_2018/blob/master/market_capitalization.png)
 
 ## 6. Ethereum Difficulty Adjustment Algorithm:
 
-Ethereum difficulty adjustment algorithm is shown in the figure.
+Ethereum difficulty adjustment algorithm is shown in these four figures.
 ![Image text](https://github.com/markliu666/PHBS_BlockChain_2018/blob/master/difficulty01.png)
 ![Image text](https://github.com/markliu666/PHBS_BlockChain_2018/blob/master/diificulty02.png)
 ![Image text](https://github.com/markliu666/PHBS_BlockChain_2018/blob/master/difficulty03.png)
@@ -176,7 +173,7 @@ Ethereum difficulty adjustment algorithm is shown in the figure.
 
 The difficulty adjustment of Ethereum is similar to Bitcoin, but there are many differences. The first one is that uncle blocks will affect the difficulty. The second is to deal with hacking or other black swan events, the difficulty is reduced by up to 99 at a time. The third is to have a difficulty bomb. It increases exponentially as the block number increases. The design of the difficulty bomb was originally designed to force the miners to switch during the transition from POW to POS, because it is difficult to insist on mining when the bomb is large enough. But now POS has not been developed yet, the difficulty bomb is already very large, so it has retreated 3 million blocks and adjusted the bonus from 5 to 3. Note that the bonus is not decremented like Bitcoin, but is only adjusted for the difficulty bomb. After the difficulty is reduced, if it is still 5 rewards, it is unfair to the miners who solve the difficult problem ahead.
 
-Ethereum difficulty adjustment situation is shown in the figure.
+Ethereum difficulty adjustment situation is shown in this figure.
 ![Image text](https://github.com/markliu666/PHBS_BlockChain_2018/blob/master/block_difficulty_growth.png)
 
 ## 7. Proof of Stake:
