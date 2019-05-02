@@ -3,6 +3,7 @@
 ## 1. Overview of Ethereum:
 
 If bitcoin represents blockchain 1.0, then Ethereum represents blockchain 2.0. Ethereum has been improved for many problems in Bitcoin, and many completely different mechanisms have been designed. Compared with Bitcoin, the main features are as follows:
+
 (1) The bitcoin block generation time is about 60 minutes, and Ethereum will shorten the time to about a dozen seconds.
 (2) Based on the consensus mechanism in Bitcoin, Ethereum has designed a more complex consensus mechanism based on GHOST protocol.
 (3) The mining puzzle used for mining is very different. Bitcoin uses the consensus mechanism of POW. Ethereum combines POW and POS and has a memory hard mining puzzle. This is to limit the use of the ASIC, which means it is an ASIC resistance puzzle. POS is similar to a shareholding vote, and Ethereum developers have repeatedly claimed to use POS to completely replace POW.
