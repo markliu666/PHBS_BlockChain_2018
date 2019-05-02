@@ -1,5 +1,12 @@
 # A Detailed Review of Ethereum
 
+## Foreword
+
+Name: Deming Liu
+Student ID: 1801212889
+
+By reading a lot of materials, I have an overall understanding of Ethereum and review Ethereum according to my own ideas. Due to the complexity of the Ethereum system, I strive to cover all the key points.
+
 ## 1. Overview of Ethereum:
 
 If bitcoin represents blockchain 1.0, then Ethereum represents blockchain 2.0. Ethereum has been improved for many problems in Bitcoin, and many completely different mechanisms have been designed. Compared with Bitcoin, the main features are as follows:
@@ -137,6 +144,10 @@ The 1M upper limit of Bitcoin cannot be adjusted. If it must be adjusted, it may
 Now there is a question, is it to mine first or to execute a smart contract first? It should be the first to execute the smart contract and then mine. Before trying a nonce, you need to generate the block header first, so the state of the three trees should have been changed already. There is no gas fee if a miner fails to mine, and there is no compensation. And the miner also needs to verify the correctness of the transaction in the released block, update the three trees locally, and then verify the comparison with the header in the blockchain. Therefore, slow miners in the Ethereum are particularly at disadvantage.
 
 So will there be miners who don’t want to verify because of no reward? (Not verifying that means a major threat to the safety of Ethereum) No. Because if a miner skips the verification process, he cannot update the local three trees, and he will not be able to mine later. So any miner cannot skip the verification process.
+
+## Conclusion
+
+There are many problems in Ethereum, and there have been many crises. But overall, it is still the second largest digital currency in the blockchain. The Ethereum blockchain ecosystem is diverse, decentralized, robust, vibrant and creative. Since its release, this rapidly adopted technology is expected to solve the problems of almost all existing industries. Developers, thinkers, innovators, and leaders around the world are gathering to create a new way of communicating, trading, and organizing. We are here for web3.0. We are here for a decentralized future. We are here for Ethereum.
 
 ## Reference
 
