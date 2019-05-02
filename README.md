@@ -138,8 +138,11 @@ So will there be miners who don’t want to verify because of no reward? (Not ve
 ## Reference
 
 [1] 李赫, 孙继飞, 杨泳, & 汪松. (2017). 基于区块链2.0的以太坊初探. 中国金融电脑(6), 57-60.
+
 [2] 张舒, & 杨宇光. (2018). 区块链技术基础及应用. 信息安全研究, v.4；No.33(06), 89-94.
+
 [3] 高航, 俞学劢, & 王毛路. (2016). 区块链与新经济:数字货币2.0时代. 电子工业出版社.
+
 [4] Mavridou, A. , & Laszka, A. . (2017). Designing secure ethereum smart contracts: a finite state machine based approach.
 
 
