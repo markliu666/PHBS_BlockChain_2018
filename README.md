@@ -56,7 +56,7 @@ The structure of the block header is shown in the figure.
 The structure of the block is shown in the figure.
 ![Image text](https://github.com/markliu666/PHBS_BlockChain_2018/blob/master/block.png)
 
-'''go
+```go
 type Header struct {
  
     ParentHash  common.Hash    `json:"parentHash"       gencodec:"required"`
@@ -90,9 +90,9 @@ type Header struct {
     Nonce       BlockNonce     `json:"nonce"            gencodec:"required"`
  
 }
-'''
+```
 
-'''go
+```go
 type Block struct {
  
     header       *Header
@@ -122,7 +122,7 @@ type Block struct {
     ReceivedFrom interface{}
  
 }
-'''
+```
 
 In the key-value pair in the MPT, the key is the account address, and the value is the account status. The storage of value needs to be serialized, using RLP (Recursive Length Prefix), and finally becomes nested array of bytes. The content here is more complicated and will not be described in detail.
 
