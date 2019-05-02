@@ -32,6 +32,7 @@ The difference between the finally used MPT (merkle patricia trie) and a common 
 In actual use, we use modified MPT, which has extension node, branch node and leaf node. A large MPT may contain a small MPT, for example, code is a small MPT. Each time only the changed account will have a new branch node written to the next block, and the rest will remain unchanged. This is done to preserve the history. I think there are at least two advantages to the benefits: (1) Add traceability. (2) In order to temporarily allow the fork. As Ethereum block generation rate is very fast, it has a lot of forks. The fork node needs to roll back. Moreover, some smart contracts are very complicated, and the original state cannot be restored without saving the history.
 
 Modified MPT is shown in the figure.
+![Image text](https://github.com/markliu666/PHBS_BlockChain_2018/blob/master/Modified%20MPT.png)
 
 The structure of the block header is shown in the figure.
 
