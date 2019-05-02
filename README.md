@@ -5,8 +5,11 @@
 If bitcoin represents blockchain 1.0, then Ethereum represents blockchain 2.0. Ethereum has been improved for many problems in Bitcoin, and many completely different mechanisms have been designed. Compared with Bitcoin, the main features are as follows:
 
 (1) The bitcoin block generation time is about 60 minutes, and Ethereum will shorten the time to about a dozen seconds.
+
 (2) Based on the consensus mechanism in Bitcoin, Ethereum has designed a more complex consensus mechanism based on GHOST protocol.
+
 (3) The mining puzzle used for mining is very different. Bitcoin uses the consensus mechanism of POW. Ethereum combines POW and POS and has a memory hard mining puzzle. This is to limit the use of the ASIC, which means it is an ASIC resistance puzzle. POS is similar to a shareholding vote, and Ethereum developers have repeatedly claimed to use POS to completely replace POW.
+
 (4) The code in Bitcoin is not turing-complete and cannot support complex smart contract operations. Ethereum added support for smart contracts and is turing-complete. Bitcoin is decentralized currency, while Ethereum is decentralized contract.
 
 If we can decentralize currency, what else can we decentralize? So Ethereum supports smart contracts. Contracts are less efficient in real life. On the one hand, it is difficult to reach a consensus when signing a contract. On the other hand, contract execution is also very hard. With smart contracts, for the first point, contract signers can be global or even unknown. Moreover, the contract of the smart contract exists in the form of code, and the code is stored in the blockchain and cannot be tampered. For the second point, the contract will always be executed.
